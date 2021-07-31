@@ -1,6 +1,10 @@
 {
     "portugues": {
-        "nomeAplicativo": "Biblioteca"
+        "nomeAplicativo": "Biblioteca",
+        "livrosTituloLista": "Lista de Livros",
+        "adicionarLivro": "Adicionar Livro",
+        "editarLivro": "Editar Livro",
+        "excluirLivro": "Excluir Livro"
     }
 }
 

@@ -22,6 +22,13 @@ const firebaseConfig = {
     measurementId: REACT_APP_MEASUREMENT_ID
 };
 
+// console.log('apiKey: ' + firebaseConfig.apiKey);
+// console.log('authDomain: ' + firebaseConfig.authDomain);
+// console.log('projectId: ' + firebaseConfig.projectId);
+// console.log('storageBucket: ' + firebaseConfig.storageBucket);
+// console.log('messagingSenderId: ' + firebaseConfig.messagingSenderId);
+// console.log('appId: ' + firebaseConfig.appId);
+// console.log('measurementId: ' + firebaseConfig.measurementId);
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 const db = firebaseApp.firestore();
@@ -181,6 +188,7 @@ const metodos = {
             .then((querySnapshot) => {
                 querySnapshot.forEach((doc) => {
                     const item = doc.data();
+                    console.log('item =', item);
                     item.id = doc.id;
                     lista.push(item);
                 });
@@ -194,6 +202,8 @@ const metodos = {
                 }
                 reject(customError);
             });
+            
+            resolve(lista);
         });
     },
 

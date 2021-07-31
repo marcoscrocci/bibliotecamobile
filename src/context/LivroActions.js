@@ -66,7 +66,7 @@ export const listarLivros = (dispatch) => {
     dispatch({ 
         type: 'listandoLivros'
     });
-
+    
     Api.listarLivros()
     .then((listaLivros) => {   
         dispatch({ 
@@ -83,6 +83,7 @@ export const listarLivros = (dispatch) => {
         });
     });
 }
+
 
 export const salvarLivro = (dispatch, livro, mensagemComponente) => {
     
