@@ -2,9 +2,10 @@ import React, { useContext } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Button, Icon } from 'react-native-elements'
+import GlobalContext from './context/GlobalContext';
 import Livros from './views/Livros';
 import LivroForm from './views/Livros/LivroForm';
-import GlobalContext from './context/GlobalContext';
+import Task from './views/Task';
 
 const Stack = createStackNavigator()
 
@@ -27,7 +28,7 @@ export default function Routers() {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                initialRouteName="UserList"
+                initialRouteName="Livros"
                 screenOptions={screenOptions}>
                 <Stack.Screen
                     name="Livros"
@@ -65,6 +66,10 @@ export default function Routers() {
                     options={{
                         title: `${excluirLivro}`
                     }}
+                />
+                <Stack.Screen
+                    name="Task"
+                    component={Task}
                 />
             </Stack.Navigator>
         </NavigationContainer>

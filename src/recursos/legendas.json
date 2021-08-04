@@ -3,8 +3,13 @@
         "nomeAplicativo": "Biblioteca",
         "livrosTituloLista": "Lista de Livros",
         "adicionarLivro": "Adicionar Livro",
-        "editarLivro": "Editar Livro",
-        "excluirLivro": "Excluir Livro"
+        "editarLivro": "Editar",
+        "excluirLivro": "Excluir",
+        "tombo": "Tombo Inicial",
+        "tombofim": "Tombo Final",
+        "titulo": "Título",
+        "autor": "Autor",
+        "editora": "Editora"
     }
 }
 
